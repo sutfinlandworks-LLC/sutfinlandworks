@@ -3,204 +3,295 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Sutfin Land Works LLC | Mid-Michigan Land Services</title>
 
-<meta name="description" content="Sutfin Land Works LLC provides driveway grading, rototilling, flail mowing, and property maintenance in Mid-Michigan. Fully insured and free estimates.">
-
-<link rel="icon" type="image/png" href="favicon.png">
-
 <style>
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #f4f6f5;
-  color: #1d1d1d;
+  background: #f3efe2;
+  color: #111;
 }
 
-/* HERO BANNER IMAGE */
-.hero {
-  position: relative;
-  text-align: center;
+.header {
+  background: #f8f3e6;
+  padding: 12px 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 190px;
+  max-width: 35%;
+}
+
+.nav a {
+  margin: 0 14px;
+  color: #111;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.call-btn {
+  background: #123d1d;
   color: white;
+  padding: 14px 22px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-/* FULL WIDTH BANNER */
-.hero img {
-  width: 100%;
-  height: auto;
-  display: block;
-  max-height: 650px;
-  object-fit: cover;
-}
-
-/* TEXT OVERLAY */
-.hero-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  width: 90%;
-  text-shadow: 0 3px 10px rgba(0,0,0,0.8);
+.hero {
+  background: linear-gradient(rgba(5,25,10,.78), rgba(5,25,10,.78)), #1f3d2b;
+  color: white;
+  padding: 90px 7%;
 }
 
 .hero h1 {
-  font-size: 42px;
-  margin-bottom: 10px;
+  font-size: 58px;
+  line-height: 1;
+  margin: 0 0 20px;
+  text-transform: uppercase;
+}
+
+.hero h1 span {
+  color: #79a846;
 }
 
 .hero p {
-  font-size: 18px;
-  margin-bottom: 20px;
+  font-size: 22px;
+  max-width: 620px;
 }
 
-/* BUTTONS */
 .btn {
   display: inline-block;
-  padding: 12px 20px;
-  margin: 6px;
-  background: #2f6b3f;
-  color: white;
-  text-decoration: none;
+  margin: 12px 10px 0 0;
+  padding: 15px 24px;
   border-radius: 6px;
+  text-decoration: none;
   font-weight: bold;
 }
 
-.btn:hover {
-  background: #245432;
+.green {
+  background: #6f9b35;
+  color: white;
 }
 
-/* SECTIONS */
-.section {
-  padding: 60px 20px;
-  text-align: center;
+.light {
+  background: #f8f3e6;
+  color: #111;
 }
 
-h2 {
-  font-size: 30px;
-  margin-bottom: 20px;
-}
-
-/* GRID */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  max-width: 1100px;
-  margin: auto;
-}
-
-/* CARDS */
-.card {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  text-align: center;
-}
-
-/* TRUST BAR */
 .trust {
-  background: #1f3d2b;
-  color: white;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  padding: 35px 7%;
+  background: #f8f3e6;
+}
+
+.trust div {
+  border-left: 4px solid #6f9b35;
+  padding-left: 18px;
+}
+
+.section {
+  padding: 65px 7%;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 40px;
+  color: #123d1d;
+  text-transform: uppercase;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 35px;
+}
+
+.card {
+  background: #fffaf0;
   padding: 30px 20px;
-  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,.08);
 }
 
-.trust span {
-  margin: 0 10px;
-  display: inline-block;
-  font-weight: bold;
+.icon {
+  background: #123d1d;
+  color: white;
+  width: 75px;
+  height: 75px;
+  margin: 0 auto 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 34px;
 }
 
-/* CTA */
 .cta {
-  background: #2f6b3f;
+  background: #123d1d;
   color: white;
-  padding: 60px 20px;
-  text-align: center;
+  padding: 55px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
 }
 
-/* FOOTER */
-footer {
-  background: #111;
+.footer {
+  background: #08200f;
   color: white;
-  text-align: center;
-  padding: 20px;
+  padding: 35px 7%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
 }
 
-/* MOBILE */
-@media (max-width: 768px) {
+.footer a {
+  color: white;
+}
+
+@media (max-width: 800px) {
+  .header {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .logo {
+    max-width: 220px;
+    width: 100%;
+  }
+
+  .nav {
+    display: none;
+  }
+
   .hero h1 {
-    font-size: 32px;
+    font-size: 40px;
+  }
+
+  .cta {
+    flex-direction: column;
+    text-align: center;
   }
 }
 </style>
-
 </head>
 
 <body>
 
-<!-- HERO BANNER -->
-<div class="hero">
+<header class="header">
+  <img src="images/logo.png" alt="Sutfin Land Works LLC Logo" class="logo">
 
-  <!-- YOUR UPLOADED IMAGE USED AS BANNER -->
-  <img src="banner.jpg">
+  <nav class="nav">
+    <a href="index.html">HOME</a>
+    <a href="#services">SERVICES</a>
+    <a href="#service-area">SERVICE AREA</a>
+    <a href="contact.html">CONTACT</a>
+  </nav>
 
-  <div class="hero-content">
-    <h1>Sutfin Land Works LLC</h1>
-    <p>Driveway Grading • Rototilling • Flail Mowing • Property Maintenance</p>
+  <a href="tel:5174887467" class="call-btn">📞 (517) 488-7467</a>
+</header>
 
-    <a href="tel:5174887467" class="btn">Call Now</a>
-    <a href="contact.html" class="btn">Free Estimate</a>
+<section class="hero">
+  <h1>Reliable Land Work.<br><span>Done Right.</span></h1>
+  <p>Professional land services for homeowners, farms, and properties across Mid-Michigan.</p>
+
+  <a href="tel:5174887467" class="btn green">📞 Call Now</a>
+  <a href="contact.html" class="btn light">Request a Free Estimate</a>
+</section>
+
+<section class="trust">
+  <div>
+    <h3>Fully Insured</h3>
+    <p>Your property is in good hands.</p>
   </div>
-</div>
 
-<!-- TRUST BAR -->
-<div class="trust">
-  <span>✔ Fully Insured</span>
-  <span>✔ Free Estimates</span>
-  <span>✔ Credit Cards Accepted</span>
-  <span>✔ Serving Mid-Michigan</span>
-</div>
+  <div>
+    <h3>Free Estimates</h3>
+    <p>Honest quotes with no obligation.</p>
+  </div>
 
-<!-- SERVICES -->
-<div class="section">
-  <h2>Services</h2>
+  <div>
+    <h3>Credit Cards Accepted</h3>
+    <p>Convenient payment options available.</p>
+  </div>
 
-  <div class="grid">
+  <div>
+    <h3>Mid-Michigan</h3>
+    <p>Serving local communities.</p>
+  </div>
+</section>
+
+<section class="section" id="services">
+  <h2>Our Services</h2>
+
+  <div class="services">
     <div class="card">
+      <div class="icon">🚜</div>
       <h3>Driveway Grading</h3>
-      <p>Repair washouts and restore gravel driveways.</p>
+      <p>Repair washouts, smooth surfaces, and maintain long-lasting gravel driveways.</p>
     </div>
 
     <div class="card">
+      <div class="icon">🌱</div>
       <h3>Rototilling</h3>
-      <p>Garden soil preparation and food plots.</p>
+      <p>Prepare garden beds, food plots, and soil for better growth.</p>
     </div>
 
     <div class="card">
+      <div class="icon">🌾</div>
       <h3>Flail Mowing</h3>
-      <p>Brush clearing and overgrown field cleanup.</p>
+      <p>Clear overgrown grass, weeds, and brush for clean, usable land.</p>
     </div>
 
     <div class="card">
+      <div class="icon">🌲</div>
       <h3>Property Maintenance</h3>
-      <p>Seasonal land cleanup and upkeep services.</p>
+      <p>Seasonal cleanups, general upkeep, and land improvement.</p>
     </div>
   </div>
-</div>
+</section>
 
-<!-- CTA -->
-<div class="cta">
-  <h2>Need Land Work Done?</h2>
-  <p>Fast quotes • Reliable service • Local contractor</p>
-  <a href="contact.html" class="btn">Request Estimate</a>
-</div>
+<section class="section" id="service-area">
+  <h2>Service Area</h2>
+  <p><strong>Sunfield, Michigan</strong></p>
+  <p>Serving Eaton, Ingham, Ionia, Barry & Clinton Counties</p>
+</section>
 
-<footer>
-  <p>© 2026 Sutfin Land Works LLC | Sunfield, Michigan</p>
+<section class="cta">
+  <div>
+    <h2>Need Land Work Done?</h2>
+    <p>Contact us today for a free estimate. Fast, reliable, and local.</p>
+  </div>
+
+  <a href="contact.html" class="btn green">Get a Free Estimate</a>
+</section>
+
+<footer class="footer">
+  <div>
+    <p>📞 <a href="tel:5174887467">(517) 488-7467</a></p>
+    <p>✉️ <a href="mailto:sutfinlandworks@gmail.com">sutfinlandworks@gmail.com</a></p>
+  </div>
+
+  <div>
+    <p>📍 Sunfield, Michigan</p>
+    <p>Eaton • Ingham • Ionia • Barry • Clinton</p>
+  </div>
+
+  <div>
+    <p>🌐 <a href="https://www.facebook.com/profile.php?id=61579506905244">Follow us on Facebook</a></p>
+  </div>
 </footer>
 
 </body>
