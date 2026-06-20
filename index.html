@@ -8,37 +8,103 @@
 <style>
 body {
   margin: 0;
-  font-family: Arial;
-  background: #f4f4f4;
+  font-family: Arial, sans-serif;
+  background: #f4f6f5;
+  color: #1d1d1d;
 }
 
+/* HERO */
 .hero {
-  background: #1f3d2b;
+  background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+  url('https://images.unsplash.com/photo-1601600576337-c1d8a0d1373e?auto=format&fit=crop&w=1600&q=60');
+  background-size: cover;
+  background-position: center;
   color: white;
   text-align: center;
-  padding: 80px 20px;
+  padding: 120px 20px;
 }
 
-.section {
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.card {
-  background: white;
-  padding: 20px;
-  margin: 10px;
-  display: inline-block;
-  width: 250px;
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
 }
 
 .btn {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 12px 20px;
+  margin: 6px;
   background: #2f6b3f;
   color: white;
   text-decoration: none;
-  margin-top: 10px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+/* SECTIONS */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* CARDS */
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* TRUST BAR */
+.trust {
+  background: #1f3d2b;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.trust span {
+  margin: 0 10px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+/* CTA */
+.cta {
+  background: #2f6b3f;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
 </style>
 
@@ -46,43 +112,87 @@ body {
 
 <body>
 
+<!-- HERO -->
 <div class="hero">
   <h1>Sutfin Land Works LLC</h1>
-  <p>Driveway Grading • Rototilling • Flail Mowing</p>
-  <a class="btn" href="tel:5174887467">Call Now</a>
+  <p>Driveway Grading • Rototilling • Flail Mowing • Property Maintenance</p>
+
+  <a href="tel:5174887467" class="btn">Call Now</a>
+  <a href="contact.html" class="btn">Free Estimate</a>
 </div>
 
+<!-- TRUST -->
+<div class="trust">
+  <span>✔ Fully Insured</span>
+  <span>✔ Free Estimates</span>
+  <span>✔ Credit Cards Accepted</span>
+  <span>✔ Mid-Michigan Service Area</span>
+</div>
+
+<!-- SERVICES -->
 <div class="section">
   <h2>Services</h2>
 
-  <div class="card">Driveway Grading</div>
-  <div class="card">Rototilling</div>
-  <div class="card">Flail Mowing</div>
-  <div class="card">Property Maintenance</div>
-  <div class="section">
-  <h2>Recent Work</h2>
-  <p>Examples of typical results we deliver for property owners across Mid-Michigan.</p>
+  <div class="grid">
+    <div class="card">
+      <h3>Driveway Grading</h3>
+      <p>Repair washouts and restore gravel driveways.</p>
+    </div>
+
+    <div class="card">
+      <h3>Rototilling</h3>
+      <p>Garden and food plot soil preparation.</p>
+    </div>
+
+    <div class="card">
+      <h3>Flail Mowing</h3>
+      <p>Clear overgrown fields and brush.</p>
+    </div>
+
+    <div class="card">
+      <h3>Property Maintenance</h3>
+      <p>Seasonal land cleanup and upkeep.</p>
+    </div>
+  </div>
+</div>
+
+<!-- WORK EXAMPLES (STOCK PHOTOS) -->
+<div class="section">
+  <h2>Example Results</h2>
 
   <div class="grid">
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1600566752225-0b9a5d5f0f0c?auto=format&fit=crop&w=800&q=60" style="width:100%; border-radius:8px;">
-      <h3>Graded Gravel Driveway</h3>
-      <p>Smoothed surface, improved drainage, restored access.</p>
+      <img src="https://images.unsplash.com/photo-1600566752225-0b9a5d5f0f0c?auto=format&fit=crop&w=800&q=60">
+      <h3>Graded Driveway</h3>
+      <p>Smooth, repaired gravel surface.</p>
     </div>
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1598511726623-d0f1b8b4b5a6?auto=format&fit=crop&w=800&q=60" style="width:100%; border-radius:8px;">
-      <h3>Fresh Rototilled Soil</h3>
-      <p>Garden-ready soil preparation for planting and food plots.</p>
+      <img src="https://images.unsplash.com/photo-1598511726623-d0f1b8b4b5a6?auto=format&fit=crop&w=800&q=60">
+      <h3>Rototilled Ground</h3>
+      <p>Fresh soil ready for planting.</p>
     </div>
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=800&q=60" style="width:100%; border-radius:8px;">
+      <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=800&q=60">
       <h3>Flail Mowed Field</h3>
-      <p>Overgrowth cleared for clean, usable property space.</p>
+      <p>Clean, controlled vegetation.</p>
+    </div>
+
+  </div>
 </div>
+
+<!-- CTA -->
+<div class="cta">
+  <h2>Need Land Work Done?</h2>
+  <p>Get a free quote today</p>
+  <a href="contact.html" class="btn">Request Estimate</a>
 </div>
+
+<footer>
+  <p>© 2026 Sutfin Land Works LLC | Sunfield, Michigan</p>
+</footer>
 
 </body>
 </html>
