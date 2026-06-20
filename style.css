@@ -41,13 +41,33 @@ body {
 
 /* HERO */
 .hero {
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-  url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1600&q=60');
-  background-size: cover;
-  background-position: center;
-  color: white;
+  background-image: url('banner.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-color: #111;
+  min-height: 800px;
+  position: relative;
+}
+
+/* DARK OVERLAY */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+}
+
+/* CONTENT */
+.hero-content {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
-  padding: 140px 20px;
+  color: white;
+  width: 90%;
+  z-index: 2;
 }
 
 .hero h1 {
@@ -56,7 +76,7 @@ body {
 }
 
 .hero p {
-  font-size: 18px;
+  font-size: 22px;
   margin-bottom: 20px;
 }
 
