@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact | Sutfin Land Works LLC</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="container">
+  <h1>Contact Us</h1>
+
+  <p>Phone: <a href="tel:5174887467">517-488-7467</a></p>
+  <p>Email: sutfinlandworks@gmail.com</p>
+  <p>Location: Sunfield, Michigan</p>
+
+  <h2>Service Area</h2>
+  <p>Eaton • Ingham • Ionia • Barry • Clinton Counties</p>
+
+  <h2>Request a Free Estimate</h2>
+
+  <form action="https://formsubmit.co/sutfinlandworks@gmail.com" method="POST">
+    <input type="text" name="name" placeholder="Name" required><br><br>
+    <input type="email" name="email" placeholder="Email" required><br><br>
+    <textarea name="message" placeholder="Describe your project" required></textarea><br><br>
+
+    <button type="submit" class="btn">Send Request</button>
+  </form>
+
+  <br>
+  <a href="index.html">Back Home</a>
+</div>
+
+</body>
+</html>

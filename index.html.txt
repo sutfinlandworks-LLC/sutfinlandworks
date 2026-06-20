@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sutfin Land Works LLC | Land Management Services</title>
+<meta name="description" content="Sutfin Land Works LLC provides driveway grading, rototilling, flail mowing, and property maintenance in Mid-Michigan. Fully insured and free estimates.">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="container">
+    <h1>Sutfin Land Works LLC</h1>
+    <p>Professional Land Management Services in Mid-Michigan</p>
+
+    <div class="cta-buttons">
+      <a href="tel:5174887467" class="btn">Call Now</a>
+      <a href="contact.html" class="btn btn-alt">Request Free Estimate</a>
+    </div>
+  </div>
+</header>
+
+<section class="intro">
+  <div class="container">
+    <h2>Reliable. Local. Professional.</h2>
+    <p>
+      We specialize in driveway grading, rototilling, flail mowing, and property maintenance across Eaton, Ingham, Ionia, Barry, and Clinton counties.
+    </p>
+
+    <div class="badges">
+      <span>✔ Fully Insured</span>
+      <span>✔ Credit Cards Accepted</span>
+      <span>✔ Free Estimates</span>
+    </div>
+  </div>
+</section>
+
+<section class="services-preview">
+  <div class="container">
+    <h2>Services</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Driveway Grading</h3>
+        <p>Restore gravel driveways and improve drainage.</p>
+      </div>
+
+      <div class="card">
+        <h3>Rototilling</h3>
+        <p>Garden beds, food plots, and soil preparation.</p>
+      </div>
+
+      <div class="card">
+        <h3>Flail Mowing</h3>
+        <p>Overgrown property cleanup and brush control.</p>
+      </div>
+
+      <div class="card">
+        <h3>Property Maintenance</h3>
+        <p>Seasonal land and lot maintenance services.</p>
+      </div>
+    </div>
+
+    <a href="services.html" class="btn">View All Services</a>
+  </div>
+</section>
+
+<section class="service-area">
+  <div class="container">
+    <h2>Service Area</h2>
+    <p>Eaton • Ingham • Ionia • Barry • Clinton Counties</p>
+  </div>
+</section>
+
+<section class="contact-banner">
+  <div class="container">
+    <h2>Get a Free Estimate Today</h2>
+    <a href="contact.html" class="btn">Contact Us</a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Sutfin Land Works LLC | Sunfield, Michigan</p>
+</footer>
+
+</body>
+</html>
