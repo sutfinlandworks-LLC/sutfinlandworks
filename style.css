@@ -23,15 +23,16 @@ body {
   align-items: center;
 }
 
-.nav h2 {
-  color: white;
-  font-size: 18px;
+.nav {
+  text-align: center;
+  background: #123d1f;
+  padding: 15px;
 }
 
 .nav a {
   color: white;
-  margin-left: 15px;
   text-decoration: none;
+  margin: 0 15px;
   font-weight: bold;
 }
 
