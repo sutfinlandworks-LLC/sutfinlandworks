@@ -169,10 +169,40 @@ footer {
 }
 
 /* MOBILE */
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 34px;
+@media (max-width: 800px) {
+  .header {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
   }
+
+  .logo {
+    width: 120px;
+    height: auto;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .nav a {
+    font-size: 14px;
+    padding: 10px 14px;
+    margin: 3px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .cta {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 }
 .card img {
   height: 180px;
