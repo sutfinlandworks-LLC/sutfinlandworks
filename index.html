@@ -32,13 +32,32 @@ body {
   display: block;
 }
 
-<nav class="nav">
-  <a href="index.html">Home</a>
-  <a href="services.html">Services</a>
-  <a href="gallery.html">Gallery</a>
-  <a href="about.html">About Us</a>
-  <a href="contact.html">Contact</a>
-</nav>
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  display: inline-block;
+  background: #2f5d34;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: 2px solid rgba(255,255,255,0.15);
+  transition: all 0.3s ease;
+}
+
+.nav a:hover {
+  background: #d4b36a;
+  color: #111111;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,.25);
+}
 
 .call-btn {
   background: #123d1d;
@@ -47,6 +66,11 @@ body {
   border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
+}
+  .nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .hero {
@@ -196,12 +220,12 @@ body {
 <header class="header">
   <img src="images/logo.png" alt="Sutfin Land Works LLC Logo" class="logo">
 
-  <nav class="nav">
-    <a href="index.html">HOME</a>
-    <a href="#services">SERVICES</a>
-    <a href="#service-area">SERVICE AREA</a>
-    <a href="contact.html">CONTACT</a>
-  </nav>
+<nav class="nav">
+  <a href="index.html">HOME</a>
+  <a href="services.html">SERVICES</a>
+  <a href="#service-area">SERVICE AREA</a>
+  <a href="contact.html">CONTACT</a>
+</nav>
 
   <a href="tel:5174887467" class="call-btn">📞 (517) 488-7467</a>
 </header>
