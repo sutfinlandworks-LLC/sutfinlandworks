@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sutfin Land Works LLC | Mid-Michigan Land Services</title>
+<meta name="description" content="Sutfin Land Works LLC provides driveway grading, rototilling, flail mowing, seeding, food plot preparation, pasture seeding, and property maintenance across Mid-Michigan.">
 
 <style>
 * {
@@ -34,7 +35,6 @@ body {
   display: block;
 }
 
-/* NAVIGATION BUTTONS */
 .nav {
   display: flex;
   justify-content: center;
@@ -72,9 +72,19 @@ body {
 }
 
 .hero {
-  background: linear-gradient(rgba(5,25,10,.78), rgba(5,25,10,.78)), #1f3d2b;
+  background: linear-gradient(rgba(5,25,10,.70), rgba(5,25,10,.70)), url('images/banner.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: white;
-  padding: 90px 7%;
+  padding: 120px 7%;
+  min-height: 520px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 780px;
 }
 
 .hero h1 {
@@ -82,15 +92,18 @@ body {
   line-height: 1;
   margin: 0 0 20px;
   text-transform: uppercase;
+  text-shadow: 2px 2px 8px rgba(0,0,0,.7);
 }
 
 .hero h1 span {
-  color: #79a846;
+  color: #9ccc5a;
 }
 
 .hero p {
   font-size: 22px;
-  max-width: 620px;
+  max-width: 700px;
+  line-height: 1.5;
+  text-shadow: 1px 1px 6px rgba(0,0,0,.7);
 }
 
 .btn {
@@ -107,9 +120,28 @@ body {
   color: white;
 }
 
+.green:hover {
+  background: #5d842c;
+}
+
 .light {
   background: #f8f3e6;
   color: #111;
+}
+
+.light:hover {
+  background: #d4b36a;
+}
+
+.announcement {
+  background: #d8ead4;
+  color: #123d1d;
+  text-align: center;
+  padding: 18px 7%;
+  font-size: 20px;
+  font-weight: bold;
+  border-top: 2px solid #6f9b35;
+  border-bottom: 2px solid #6f9b35;
 }
 
 .trust {
@@ -125,6 +157,11 @@ body {
   padding-left: 18px;
 }
 
+.trust h3 {
+  margin-bottom: 8px;
+  color: #123d1d;
+}
+
 .section {
   padding: 65px 7%;
   text-align: center;
@@ -134,6 +171,14 @@ body {
   font-size: 40px;
   color: #123d1d;
   text-transform: uppercase;
+  margin-top: 0;
+}
+
+.section-intro {
+  max-width: 850px;
+  margin: 0 auto 25px;
+  font-size: 18px;
+  line-height: 1.6;
 }
 
 .services {
@@ -150,6 +195,14 @@ body {
   box-shadow: 0 5px 15px rgba(0,0,0,.08);
 }
 
+.card h3 {
+  color: #123d1d;
+}
+
+.card p {
+  line-height: 1.5;
+}
+
 .icon {
   background: #123d1d;
   color: white;
@@ -163,6 +216,40 @@ body {
   font-size: 34px;
 }
 
+.featured {
+  background: #eef4ee;
+}
+
+.feature-card {
+  max-width: 900px;
+  margin: 35px auto 0;
+  text-align: left;
+}
+
+.feature-card h3 {
+  text-align: center;
+  font-size: 28px;
+}
+
+.feature-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px 25px;
+  max-width: 750px;
+  margin: 20px auto;
+  padding-left: 20px;
+  line-height: 1.8;
+}
+
+.service-area-box {
+  background: #fffaf0;
+  max-width: 850px;
+  margin: 25px auto 0;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,.08);
+}
+
 .cta {
   background: #123d1d;
   color: white;
@@ -171,6 +258,10 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 25px;
+}
+
+.cta h2 {
+  margin-top: 0;
 }
 
 .footer {
@@ -186,7 +277,10 @@ body {
   color: white;
 }
 
-/* MOBILE */
+.footer strong {
+  color: #d4b36a;
+}
+
 @media (max-width: 800px) {
   .header {
     flex-direction: column;
@@ -207,8 +301,23 @@ body {
     padding: 10px 14px;
   }
 
+  .hero {
+    padding: 80px 7%;
+    min-height: 440px;
+    text-align: center;
+    justify-content: center;
+  }
+
   .hero h1 {
     font-size: 40px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .section h2 {
+    font-size: 32px;
   }
 
   .cta {
@@ -226,7 +335,8 @@ body {
 
   <nav class="nav">
     <a href="index.html">HOME</a>
-    <a href="services.html">SERVICES</a>
+    <a href="#services">SERVICES</a>
+    <a href="#seed-drill">SEED DRILL</a>
     <a href="#service-area">SERVICE AREA</a>
     <a href="contact.html">CONTACT</a>
   </nav>
@@ -235,12 +345,18 @@ body {
 </header>
 
 <section class="hero">
-  <h1>Reliable Land Work.<br><span>Done Right.</span></h1>
-  <p>Professional land services for homeowners, farms, and properties across Mid-Michigan.</p>
+  <div class="hero-content">
+    <h1>Reliable Land Work.<br><span>Done Right.</span></h1>
+    <p>Driveway grading, garden rototilling, flail mowing, seeding, food plot preparation, and property maintenance across Mid-Michigan.</p>
 
-  <a href="tel:5174887467" class="btn green">📞 Call Now</a>
-  <a href="contact.html" class="btn light">Request a Free Estimate</a>
+    <a href="tel:5174887467" class="btn green">📞 Call Now</a>
+    <a href="contact.html" class="btn light">Request a Free Estimate</a>
+  </div>
 </section>
+
+<div class="announcement">
+  🌱 Now Offering Precision Seeding with our 6-Foot Tar River DRL-072 Seed Drill
+</div>
 
 <section class="trust">
   <div>
@@ -266,50 +382,110 @@ body {
 
 <section class="section" id="services">
   <h2>Our Services</h2>
+  <p class="section-intro">Sutfin Land Works LLC provides dependable tractor-based land services for homeowners, farms, hunting properties, rural properties, and small acreage owners.</p>
 
   <div class="services">
     <div class="card">
       <div class="icon">🚜</div>
       <h3>Driveway Grading</h3>
-      <p>Repair washouts, smooth surfaces, and maintain long-lasting gravel driveways.</p>
+      <p>Repair washouts, smooth potholes, reduce washboarding, and maintain long-lasting gravel driveways.</p>
     </div>
 
     <div class="card">
       <div class="icon">🌱</div>
-      <h3>Rototilling</h3>
-      <p>Prepare garden beds, food plots, and soil for better growth.</p>
+      <h3>Garden Rototilling</h3>
+      <p>Prepare garden beds, food plots, and soil for better growth using professional equipment.</p>
     </div>
 
     <div class="card">
       <div class="icon">🌾</div>
+      <h3>Seeding</h3>
+      <p>Precision seeding for food plots, pastures, hay fields, native grasses, cover crops, and field renovation.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🦌</div>
+      <h3>Food Plot Preparation</h3>
+      <p>Prepare and seed wildlife food plots for deer, turkey, and improved habitat management.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🌿</div>
       <h3>Flail Mowing</h3>
-      <p>Clear overgrown grass, weeds, and brush for clean, usable land.</p>
+      <p>Clear overgrown grass, weeds, brush, and vegetation up to 1.5 inches in diameter.</p>
     </div>
 
     <div class="card">
       <div class="icon">🌲</div>
       <h3>Property Maintenance</h3>
-      <p>Seasonal cleanups, general upkeep, and land improvement.</p>
+      <p>Seasonal cleanups, general upkeep, land improvement, and reclaiming neglected property.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section featured" id="seed-drill">
+  <h2>Tar River DRL-072 Seed Drill</h2>
+  <p class="section-intro">Our 6-foot Tar River DRL-072 seed drill helps establish strong, healthy stands with accurate seed placement and minimal soil disturbance.</p>
+
+  <div class="card feature-card">
+    <div class="icon">🌱</div>
+    <h3>Precision Seeding</h3>
+
+    <p>
+      No-till seeding places seed at the proper depth while helping protect existing soil structure. This can reduce erosion, retain moisture, improve seed-to-soil contact, and create better conditions for germination.
+    </p>
+
+    <p><strong>Great for:</strong></p>
+
+    <ul class="feature-list">
+      <li>✔ Wildlife food plots</li>
+      <li>✔ New and existing pastures</li>
+      <li>✔ Hay fields</li>
+      <li>✔ Native grass plantings</li>
+      <li>✔ Cover crops</li>
+      <li>✔ Lawn seeding</li>
+      <li>✔ Field renovation</li>
+      <li>✔ Clover, alfalfa, oats, wheat, grass seed, soybeans, corn, and more</li>
+    </ul>
+
+    <p>
+      Whether you are improving hunting property, renovating a pasture, planting a hay field, or establishing a new lawn or field, our seed drill helps get seed where it needs to be.
+    </p>
+
+    <div style="text-align:center;">
+      <a href="contact.html" class="btn green">Request a Seeding Estimate</a>
+      <a href="tel:5174887467" class="btn light">Call 517-488-7467</a>
     </div>
   </div>
 </section>
 
 <section class="section" id="service-area">
   <h2>Service Area</h2>
-  <p><strong>Sunfield, Michigan</strong></p>
-  <p>Serving Eaton, Ingham, Ionia, Barry & Clinton Counties</p>
+  <div class="service-area-box">
+    <p><strong>Based in Sunfield, Michigan</strong></p>
+    <p>Serving Eaton, Ingham, Ionia, Barry & Clinton Counties</p>
+    <p>Not sure if you are in our service area? Call or send a message for a free estimate.</p>
+  </div>
 </section>
 
 <section class="cta">
   <div>
     <h2>Need Land Work Done?</h2>
-    <p>Contact us today for a free estimate. Fast, reliable, and local.</p>
+    <p>Contact us today for a free estimate. Fast, reliable, local, and fully insured.</p>
   </div>
 
-  <a href="contact.html" class="btn green">Get a Free Estimate</a>
+  <div>
+    <a href="contact.html" class="btn green">Get a Free Estimate</a>
+    <a href="tel:5174887467" class="btn light">Call Now</a>
+  </div>
 </section>
 
 <footer class="footer">
+  <div>
+    <p><strong>Sutfin Land Works LLC</strong></p>
+    <p>Fully Insured • Free Estimates • Credit Cards Accepted</p>
+  </div>
+
   <div>
     <p>📞 <a href="tel:5174887467">(517) 488-7467</a></p>
     <p>✉️ <a href="mailto:sutfinlandworks@gmail.com">sutfinlandworks@gmail.com</a></p>
